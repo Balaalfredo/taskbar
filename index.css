@@ -1,0 +1,82 @@
+* {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  background: linear-gradient(#FF4C52, #FF5975);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.main .box1 {
+  width: 30%;
+  height: 10%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.6em;
+  color: white;
+  font-weight: 550;
+}
+.main .box2 {
+  width: 30%;
+  height: 10%;
+  border: 2px solid white;
+  margin: 20px;
+  margin-top: -10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+}
+.main .box2 p:first-child {
+  font-size: 1.2em;
+  color: rgb(125, 103, 103);
+}
+.main .box2 p:last-child {
+  font-size: 1.4em;
+  color: rgb(125, 103, 103);
+}
+.main #box3 {
+  width: 30%;
+  border: 2px solid white;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main #box3 .line {
+  width: 80%;
+  border-bottom: 2px solid black;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.main #box3 .line #tick {
+  accent-color: black;
+}
+.main #box3 .line #close1 {
+  color: #FF4C52;
+}
+.main #box3 .line #close2 {
+  color: #FF4C52;
+}
+.main #box3 .line #close3 {
+  color: #FF4C52;
+}
+.main #box3 .line #close4 {
+  color: #FF4C52;
+}
+.main #box3 #clear {
+  align-self: flex-end;
+  padding-right: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

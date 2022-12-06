@@ -1,0 +1,101 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@mixin box($display: flex, $justify: center, $align: center, $flex-direction: column) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align ;
+    flex-direction: $flex-direction;
+}
+
+.main {
+    // width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#FF4C52, #FF5975);
+    @include box($justify: flex-start);
+
+    .box1 {
+        width: 30%;
+        height: 10%;
+        // border: 2px solid black;
+        // margin: 20px;
+        margin-top: 40px;
+        @include box($justify: center);
+        font-size: 1.6em;
+        color: white;
+        font-weight: 550;
+
+    }
+
+    .box2 {
+        width: 30%;
+        height: 10%;
+        border: 2px solid white;
+        margin: 20px;
+        margin-top: -10px;
+        margin-top: 40px;
+        @include box($justify: space-between, $flex-direction: row);
+        background-color: white;
+
+        p:first-child {
+            font-size: 1.2em;
+            color: rgb(125, 103, 103);
+        }
+
+        p:last-child {
+            font-size: 1.4em;
+            color: rgb(125, 103, 103);
+        }
+
+    }
+
+    #box3 {
+        width: 30%;
+        // height: 55%;
+        border: 2px solid white;
+        background-color: white;
+        @include box($justify: center, $align: center);
+        overflow: hidden;
+
+        .line {
+
+            width: 80%;
+            border-bottom: 2px solid black;
+            padding-left: 10px;
+            margin-left: 20px;
+            // text-align: left;
+
+
+
+            #tick {
+                accent-color: black;
+
+            }
+
+            #close1 {
+                color: #FF4C52;
+            }
+
+            #close2 {
+                color: #FF4C52;
+            }
+
+            #close3 {
+                color: #FF4C52;
+            }
+
+            #close4 {
+                color: #FF4C52;
+            }
+        }
+
+        #clear {
+            align-self: flex-end;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+    }
+
+}
